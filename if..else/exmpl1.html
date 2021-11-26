@@ -9,19 +9,14 @@
 <body>
 <script>
 
-    const time = new Date().getHours();
-
-    var missage;
-
-    if (time < 5) { missage = "Good morning"; } 
-
-
-    else if (time <20)  { missage = "Good day" ; }
-
-
-    else { greeting = "Good evening"; }
-
-   document.write(missage) ;
+var now = new Date();
+var dayOfWeek = now.getDay(); 
+    
+    if(dayOfWeek == 5) {
+        document.write("Have a nice weekend!");
+    } else {
+        document.write("Have a nice day!");
+    }
     </script>
 </body>
 </html>
