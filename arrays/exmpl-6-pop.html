@@ -2,14 +2,14 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>JavaScript Remove the First Element from an Array</title>
+    <title>JavaScript Remove the Last Element from an Array</title>
 </head>
 <body>
     <script>
     var colors = ["Red", "Green", "Blue"];
-    var first = colors.shift();
+     colors.pop();
      
-    document.write(first + "<br>"); // Prints: Red
+    document.write(colors + "<br>"); // Prints: Red,Green
     document.write(colors.length); // Prints: 2
     </script>
 </body>
