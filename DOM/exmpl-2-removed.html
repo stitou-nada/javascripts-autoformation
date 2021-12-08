@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1>The remove() Method</h1>
+<p>The remove() method removes the element from the DOM.</p>
+<p id="para">Click the button, and this paragraph will be removed from the DOM.</p>
+<button onclick="cliCk()">Remove paragraph</button>
+<script>
+function cliCk() {
+  var rm = document.getElementById("para");
+  rm.remove();
+}
+</script>
+</body>
+</html>
