@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //declaration de variable
+        var listNombre
+        var nombre
+        var userinpute
+        //saisir
+        listNombre =[];
+        nombre = 5;
+        //traitment
+        for( i=0 ; i<=nombre ; i++ ){
+              userinpute = parseInt(prompt('Entrer :'));
+              listNombre[i] = userinpute;
+        }
+        for( i=0 ; i<=nombre ; i++ ){
+            if (listNombre[i] != 0 ){
+                alert(listNombre[i])
+            }
+        }
+    </script>
+
+</body>
+</html>

@@ -7,39 +7,33 @@
     <title>Document</title>
 </head>
 <body>
-    <input id="nbr1"> + <input id="nbr2">
-    <button onclick="somme()">Calculer la somme</button>
-    <input id="sum">
     <script>
        //declartion des variable
 var listnombre
 var userinput
 var nombre
-var operateur
 //entre : saisir
 listnombre= [];
-nombre = 1;
-
+nombre = 3;
 //traitement
-function somme(){
-             var nbr1, nbr2, sum;
-             nbr1 = Number(document.getElementById("nbr1").value);
-             nbr2 = Number(document.getElementById("nbr2").value);
-             sum = nbr1 + nbr2;
-             document.getElementById("sum").value = sum;
-            
-    
-         }
-         for(i=0;
-         i<=nombre;
+ for(i=0;
+    i<=nombre;
     i++){
         userinput= parseInt(prompt("entre :"));
-        listnombre1[i]=userinput
+        listnombre[i]=userinput
+       
     }
 for(i=0;
     i<=nombre;
     i++){
-        alert(listnombre[i]);
+        if ( listnombre[i]> 0){
+			check='positive';
+			} else if ( listnombre[i]< 0){
+			check='negative';
+			} else {
+			check= 'neither positive nor negative'
+			}
+        alert ( listnombre[i] +' is  '+ check+' number');
     }  
  
     </script>
