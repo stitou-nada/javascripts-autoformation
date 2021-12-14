@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="solicode"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2021-12-14 03:36:02 "/>
+        <attribute name="created" value="c29saWNvZGU7REVTS1RPUC0yNUc0MjNVOzIwMjEtMTItMTQ7IjAyOjU5OjUwICI7MzAzNA=="/>
+        <attribute name="edited" value="c29saWNvZGU7REVTS1RPUC0yNUc0MjNVOzIwMjEtMTItMTQ7IjAzOjM2OjAyICI7MTszMTM1"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="A" type="Integer" array="False" size=""/>
+            <declare name="B" type="Integer" array="False" size=""/>
+            <declare name="C" type="Integer" array="False" size=""/>
+            <output expression="&quot;donner premier nombre&quot;" newline="True"/>
+            <input variable="A"/>
+            <output expression="&quot;donner deuxiem nombre&quot;" newline="True"/>
+            <input variable="B"/>
+            <output expression="&quot;avant:A=&quot;&amp;A&amp;&quot;;B=&quot;&amp;B" newline="True"/>
+            <assign variable="C" expression="A"/>
+            <assign variable="A" expression="B"/>
+            <assign variable="B" expression="C"/>
+            <output expression="&quot;apr&#232;s:A=&quot;&amp;A&amp;&quot;;B=&quot;&amp;B" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
