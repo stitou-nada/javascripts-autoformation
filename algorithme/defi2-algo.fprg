@@ -4,15 +4,16 @@
         <attribute name="name" value=""/>
         <attribute name="authors" value="solicode"/>
         <attribute name="about" value=""/>
-        <attribute name="saved" value="2021-12-13 01:28:34 "/>
+        <attribute name="saved" value="2021-12-16 02:51:54 "/>
         <attribute name="created" value="c29saWNvZGU7REVTS1RPUC01NkkyNjdCOzIwMjEtMTItMTM7IjEyOjIwOjMwICI7MzAxMw=="/>
         <attribute name="edited" value="c29saWNvZGU7REVTS1RPUC01NkkyNjdCOzIwMjEtMTItMTM7IjAxOjI4OjM0ICI7MTszMTMx"/>
+        <attribute name="edited" value="c29saWNvZGU7REVTS1RPUC0yNUc0MjNVOzIwMjEtMTItMTY7IjAyOjUxOjU0ICI7MTszMTQw"/>
     </attributes>
     <function name="Main" type="None" variable="">
         <parameters/>
         <body>
-            <declare name="isFound" type="Boolean" array="False" size=""/>
-            <assign variable="isFound" expression="false"/>
+            <declare name="trouve" type="Boolean" array="False" size=""/>
+            <assign variable="trouve" expression="false"/>
             <declare name="listNumbers" type="Integer" array="True" size="5"/>
             <assign variable="listNumbers[0]" expression="1"/>
             <assign variable="listNumbers[1]" expression="10"/>
@@ -25,17 +26,17 @@
             <for variable="i" start="0" end="4" direction="inc" step="1">
                 <if expression="userInput == listNumbers[i]">
                     <then>
-                        <assign variable="isFound" expression="true"/>
+                        <assign variable="trouve" expression="true"/>
                     </then>
                     <else/>
                 </if>
             </for>
-            <if expression="isFound">
+            <if expression="trouve">
                 <then>
-                    <output expression="&quot;Yes the number exists&quot;" newline="True"/>
+                    <output expression="&quot;le nombre n'existe&quot;" newline="True"/>
                 </then>
                 <else>
-                    <output expression="&quot;Did not found the number&quot;" newline="True"/>
+                    <output expression="&quot;le nombre n'existe&quot;" newline="True"/>
                 </else>
             </if>
         </body>
