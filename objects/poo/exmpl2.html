@@ -10,22 +10,18 @@
 
 <body>
     <script>
-        class student {
-            constructor(name, age, major) {
-                this.name = name;
-                this.age = age;
-                this.major = major;
-            }
-            introduction() {
-                console.log(`I'm ${this.name}, ${this.age}, years old.
-            I'm a student of ${this.major}.`);
-            }
-
-        }
-        const student1 = new student('nada', 20, 'solicode');
-        student1.introduction();
-        const student2 = new student('boutaina', 23, 'solicode');
-        student2.introduction();
+      class student {
+        name= '';
+            lastName;
+      }
+      const student1 = new student ();
+    //   saiser
+    student1.name = 'nada';
+    student1.lastName = 'stitou';
+    // traitment:nom complet
+    var fullName = student1.name + " " + student1.lastName
+    // affichage
+     console.log (fullName);
     </script>
 </body>
 
