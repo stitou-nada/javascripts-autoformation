@@ -9,17 +9,23 @@
 </head>
 
 <body>
+
+
+    <script src="Person.js"></script>
     <script>
-        //  declaration
-        class student {
-            name = '';
-            lastName;
-        }
-        const student1 = new student();
-        // saiser
-        student1.name = 'nada';
-        // affichage
-        console.log(student1.name)
+        // declaration
+        var person1 = new Person();
+
+        person1._name = "Jhin"
+
+        person1.age = 44
+
+        person1.gender = "male"
+
+
+        person1.display()
+    //   affichage
+        console.log(person1.gender)
     </script>
 
 </body>
