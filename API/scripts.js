@@ -9,8 +9,10 @@
 
 // deuxiem etape
   async function get() {
-     var response = await fetch("https://www.breakingbadapi.com/api/") //await : hia stena
+     var response = await fetch("https://www.breakingbadapi.com/api/characters") 
      var data = await response.json()
-     console.log(data)
+     console.log(data) 
+
+ 
  }
- get()
+ get()   
