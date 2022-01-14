@@ -6,14 +6,7 @@ var ouvrageId = null;
 document.getElementById("formSubmit").addEventListener("submit", function (event) {
     event.preventDefault();
     var ouvrage = readOuvrage();
-    if (selectRow == null) {
-
-        gestionOuvrage.addOuvrage(ouvrage);
-    } else
-    if (confirm("Êtes-vous sûr de modifier cette œuvre?")){
-        ouvrage.id = rowId;
-        gestionOuvrage.editOuvrage(ouvrage)
-    }
+    gestionOuvrage.addOuvrage(ouvrage);
 
     insertNewRow();
 
@@ -37,12 +30,12 @@ function readOuvrage() {
 
 
 function insertNewRow() {
-    var ouvrageList = gestionOuvrage.getAllItem()
-    console.log(gestionOuvrage.getAllItem())
+    var ouvrageList = gestionOuvrage.ouvrageList
     var tableBody = document.getElementById("ouvrageTable").getElementsByTagName('tbody')[0];
    while(tableBody.rows.length > 0){
        tableBody.deleteRow(0);
    }
+   
    for(var i = 0; i < ouvrageList.length; i++){
     var newRow = tableBody.insertRow(tableBody.length);
     newRow.insertCell(0).innerHTML = ouvrageList[i].id;
