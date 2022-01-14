@@ -1,15 +1,15 @@
 {
-    "eBooks": [{
-            "language": "Pascal",
-            "edition": "third"
+    "product": [{
+            "name": "Pascal",
+            "price": 40
         },
         {
-            "language": "Python",
-            "edition": "four"
+            "name": "Python",
+            "price": 100
         },
         {
-            "language": "SQL",
-            "edition": "second"
+            "name": "SQL",
+            "price": 100
         }
     ]
 }
