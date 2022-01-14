@@ -1,0 +1,15 @@
+{
+    "product": [{
+            "language": "Pascal",
+            "price": 50
+        },
+        {
+            "language": "Python",
+            "price": 100
+        },
+        {
+            "language": "SQL",
+            "price": 200
+        }
+    ]
+}
