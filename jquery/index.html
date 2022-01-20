@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("#cacher").click(function(){
+    $("p").hide();
+  });
+  $("#montrer").click(function(){
+    $("p").show();
+  });
+});
+</script>
+</head>
+<body>
+
+<p>If you click on the "cacher" button, I will disappear.</p>
+
+<button id="cacher">cacher</button>
+<button id="montrer">montrer</button>
+
+</body>
+</html>
