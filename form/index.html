@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<body>
+    <label>Name: </label>
+    <input type="text" id="name" onkeyup="onChangeName()">
+    <p id="showName"></p>
+    <script>
+
+        var nameInput = document.getElementById('name');
+        var showName = document.getElementById('showName');
+
+
+        function onChangeName(){
+            showName.innerHTML = nameInput.value;
+         }
+  
+    </script>
+</body>
+</html>
